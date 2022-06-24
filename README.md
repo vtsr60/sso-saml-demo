@@ -4,11 +4,8 @@ A project to demo SSO use of SimpleSAMLphp application.
 
 ## Features
 
-- Demo the SAML SSO login.
-- Reviewer can write reviews on any restaurants in the list and give rating along with the review.
-- Owners can create restaurants and only see restaurants which they have created.
-- Owners can see the user reviews and relpay to them.
-- Admin User can edit/delete all users, restaurants, comments, and reviews
+- Demo the SAML SSO login using the SimpleSAMLphp in composer context.
+- Quick start guide to setup SimpleSAMLphp for remote IDP.
 
 ## Requirements
 
