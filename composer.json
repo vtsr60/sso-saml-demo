@@ -1,0 +1,19 @@
+{
+	"name": "tharaj/ssosaml",
+	"authors": [
+		{
+			"name": "Raj Vivakaran",
+			"email": "Raj.Vivakaran@openpolytechnic.ac.nz"
+		}
+	],
+	"require": {
+		"simplesamlphp/simplesamlphp": "^1.19"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"cd public && php -r \"is_link('simplesaml') || symlink('../vendor/simplesamlphp/simplesamlphp/www', 'simplesaml');\"",
+			"cp -rf config/. vendor/simplesamlphp/simplesamlphp/config/",
+			"cp -rf metadata/. vendor/simplesamlphp/simplesamlphp/metadata/"
+		]
+	}
+}

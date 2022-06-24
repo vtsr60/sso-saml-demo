@@ -1,0 +1,10 @@
+# Redirect all request to index,php
+RewriteEngine On
+
+RewriteRule ^(simplesaml) - [L]
+
+# RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^ index.php [QSA,L]
